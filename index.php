@@ -57,19 +57,104 @@ echo "<b>Convert date into array</b><br>";
 print_r (explode("/",$date1));
 echo "<br>";
 
+echo "<br><b>Leap year using foreach</b><br>";
+foreach($year as $value)
+{
+    if(((int)$value)%4==0)
+{
+       echo "<br>True";
+}
+    else
+{
+       echo "<br>False";
+}
+}
+echo "<br>";
 
+echo "<br><b>Leap year using While function</b><br>"; 
+$i=0;
+while($i<count($year))
+{
+if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+++$i;
+}
+echo "<br>";
 
+echo "<br><b>Leap year using Switch statements</b><br>";
+for ($i=0;$i<count($year);$i++)
 
+{echo "<br>";
+switch ($year{$i})
+{
+case "2012": if(((int)$year[$i])%4==0)
+{
+echo "True";
+}
+else
+{
+echo "False";
+}
+break;
 
+case "396": if(((int)$year[$i])%4==0)
+{
+echo "True";
+}
+else
+{
+echo "False";
+}
+break;
 
+case "300": if(((int)$year[$i])%4==0)
+{
+echo "True";
+}
+else
+{
+echo "False";
+}
+break;
 
+case "2000": if(((int)$year[$i])%4==0)
+{
+echo "True";
+}
+else
+{
+echo "False";
+}
+break;
 
+case "1089": if(((int)$year[$i])%4==0)
+{
+echo "True";
+}
+else
+{
+echo "False";
+}
+break;
 
+case "1100": if(((int)$year[$i])%4==0)
+{
+echo "True";
+}
+else
+{
+echo "False";
+}
+break;
 
-
-
-
-
+}
+}
 
 ?>
 
