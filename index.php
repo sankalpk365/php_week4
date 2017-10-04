@@ -10,13 +10,58 @@ echo "The value of \$year: "."<br>";
 print_r($year)."<br>";
 echo "<br>";
 
-echo "<br>1. Replaced '-' with '/' in date <br>";
+echo "<br><b>Replaced '-' with '/' in date</b><br>";
 $date1 = str_replace("-", "/","$date");
 echo "The value of \$date: ".$date1."<br>";
+echo "<br>";
+
+echo "<b>Compare date and tar and print the output</b><br>";
+if($date1>$tar){
+        echo "The future"."<br>";
+         }
+    elseif ($date1<$tar){
+        echo "The past"."<br>";
+		        }
+    else {
+        echo "Oops";
+		        }
+
+echo "<br>";
+
+echo "<b>Search '/' and print all the positions</b>"."<br>";
+echo "The postion of '/' is at ";
+echo strpos("$date1","/");
+echo " and ";
+echo strrpos("$date1","/")."<br>";
+
+echo "<br>";
+
+echo "<b>Count the number of words in date and print the output</b><br>";
+echo str_word_count($date)."<br>";
 echo "<br>";
 
 
 
 
 
->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+
+
+
