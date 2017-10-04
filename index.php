@@ -5,6 +5,8 @@ echo "The value of \$date: ".$date."<br>";
 $tar = "2017/05/24";
 echo "The value of \$tar: ".$tar."<br>";
 
+$string = "Hi Wassup";
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: "."<br>";
 print_r($year)."<br>";
@@ -19,12 +21,12 @@ echo "<b>Compare date and tar and print the output</b><br>";
 if($date1>$tar){
         echo "The future"."<br>";
          }
-    elseif ($date1<$tar){
-        echo "The past"."<br>";
-		        }
-    else {
-        echo "Oops";
-		        }
+elseif ($date1<$tar){
+echo "The past"."<br>";
+		}
+else {
+echo "Oops";
+		}
 
 echo "<br>";
 
@@ -40,9 +42,13 @@ echo "<b>Count the number of words in date and print the output</b><br>";
 echo str_word_count($date)."<br>";
 echo "<br>";
 
+echo "<b>Return the length of the string and print the result</b><br>";
+echo strlen("$string")."<br>";
+echo "<br>";
 
-
-
+echo "<b>Return the ASCII value of the string</b><br>";
+echo ord("$string")."<br>";
+echo "<br>";
 
 
 
