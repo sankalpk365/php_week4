@@ -35,7 +35,6 @@ echo "The postion of '/' is at ";
 echo strpos("$date1","/");
 echo " and ";
 echo strrpos("$date1","/")."<br>";
-
 echo "<br>";
 
 echo "<b>Count the number of words in date and print the output</b><br>";
@@ -50,7 +49,13 @@ echo "<b>Return the ASCII value of the string</b><br>";
 echo ord("$string")."<br>";
 echo "<br>";
 
+echo "<b>Return last two characters in date  and print the result</b><br>";
+echo substr("$date","-2")."<br>";
+echo "<br>";
 
+echo "<b>Convert date into array</b><br>";
+print_r (explode("/",$date1));
+echo "<br>";
 
 
 
